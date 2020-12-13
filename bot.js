@@ -22,9 +22,9 @@ client.on('ready', async () => {
     client.appInfo = await client.fetchApplication();
   }, 600);
   
- client.user.setActivity(`discord.gg/codework`, { type:'WATCHING' })
+ client.user.setActivity(`Code My Life`, { type:'WATCHING' })
   
-  console.log("CodeWork Akıyor!!")
+  console.log("Code My Life")
 });
 
 const log = message => {
@@ -120,7 +120,7 @@ client.elevation = message => {
     if (message.author.id === ayarlar.sahip) permlvl = 4;
     return permlvl;
 };
-client.login(process.env.TOKEN)
+client.login(ayarlar.token)
 
 
 //-----------------------KOMUTLAR-----------------------\\
