@@ -5,7 +5,7 @@ var prefix = ayarlar.prefix;
 
 exports.run = async(client, message, args) => {
 
-        const jkood = new Discord.MessageEmbed()
+        const CML = new Discord.MessageEmbed()
 
              .setColor('#fff000')
              .addField(`İşte Komutlarım!`, `
@@ -28,7 +28,7 @@ exports.run = async(client, message, args) => {
              `)
              .setFooter(`${message.author.username} Tarafından istendi.`, message.author.avatarURL())
             
-        return message.channel.send(jkood);
+        return message.channel.send(CML);
 }
 
 exports.conf = {
